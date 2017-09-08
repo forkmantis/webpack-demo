@@ -1,6 +1,5 @@
 ## App
-dist/*bundle.*
-dist/*.png
+dist/*
 
 ### Node ###
 # Logs
