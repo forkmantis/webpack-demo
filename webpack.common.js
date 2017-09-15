@@ -4,7 +4,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.js',
+        another: './src/another-module.js'
     },
     module: {
         rules: [
@@ -17,7 +18,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title: 'Production'
+            title: 'Code Splitting'
         })
     ],
     output: {
